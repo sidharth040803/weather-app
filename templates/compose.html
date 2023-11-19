@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if result %}
+        <h1>City: {{ city }}</h1>
+        <p>Weather: {{ result['Weather'] }}</p>
+        <p>Temperature: {{ result['Temperature'] }}</p>
+        <p>Humidity: {{ result['humidity'] }}</p>
+    {% endif %}
+</body>
+</html>
